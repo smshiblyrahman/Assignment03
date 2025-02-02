@@ -1,11 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 3</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse4Pets</title>
+    <meta name="description" content="Pet Store Website" />
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="border-b bg-white">
+      <div class="container mx-auto flex items-center justify-between py-4">
+        <div class="flex items-center gap-2">
+          <img src="./Assignment_03_Category_0001/c1-assets/logo-header.png" alt="Logo" class="h-8 w-8" />
+          <a href="/" class="text-xl font-bold">Browse<span class="text-yellow-400">4</span>Pets</a>
+        </div>
+        
+        <nav class="hidden md:block">
+          <ul class="flex items-center gap-8">
+            <li><a href="/find-pet" class="hover:text-primary">Find a pet</a></li>
+            <li><a href="/breeds" class="hover:text-primary">Breeds</a></li>
+            <li><a href="/contact" class="hover:text-primary">Contact us</a></li>
+          </ul>
+        </nav>
+        
+        <div class="flex items-center gap-4">
+          <a href="/login" class="hover:text-primary">Login</a>
+          <a href="/register" class="rounded-full bg-primary px-4 py-2 text-white hover:bg-primary/90">Register</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="bg-gray-50 py-16">
+        <div class="container mx-auto grid gap-8 md:grid-cols-2">
+          <div class="flex flex-col justify-center">
+            <h1 class="mb-4 text-4xl font-bold md:text-5xl">Pamper Your Pet, Because They Deserve the Best</h1>
+            <p class="mb-8 text-lg text-gray-600">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+            <a href="/find-pet" class="inline-flex w-fit items-center justify-center rounded-full bg-primary px-8 py-3 font-semibold text-white hover:bg-primary/90">Find a pet</a>
+          </div>
+          <div class="relative">
+            <img src="./Assignment_03_Category_0001/c1-assets/cat-big.png" alt="Happy pets" class="rounded-lg shadow-lg" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section class="py-16">
+        <div class="container mx-auto">
+          <h2 class="mb-8 text-center text-3xl font-bold">Browse By Categories</h2>
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+            <!-- Category cards -->
+            <div class="group cursor-pointer rounded-lg bg-white p-4 shadow-md transition-all hover:shadow-lg">
+              <div class="relative mb-4 aspect-square overflow-hidden rounded-lg">
+                <img src="./Assignment_03_Category_0001/c1-assets/dog-cartoon.png" alt="Dog" class="h-full w-full object-cover transition-transform group-hover:scale-105" />
+              </div>
+              <h3 class="mb-1 text-lg font-semibold">Dog</h3>
+              <p class="text-sm text-gray-600">3 items</p>
+            </div>
+            <!-- Fish Category -->
+            <div class="group cursor-pointer rounded-lg bg-white p-4 shadow-md transition-all hover:shadow-lg">
+              <div class="relative mb-4 aspect-square overflow-hidden rounded-lg">
+                <img src="./Assignment_03_Category_0001/c1-assets/fish-cartoon.png" alt="Fish" class="h-full w-full object-cover transition-transform group-hover:scale-105" />
+              </div>
+              <h3 class="mb-1 text-lg font-semibold">Fish</h3>
+              <p class="text-sm text-gray-600">3 items</p>
+            </div>
+
+            <!-- Cat Category -->
+            <div class="group cursor-pointer rounded-lg bg-white p-4 shadow-md transition-all hover:shadow-lg">
+              <div class="relative mb-4 aspect-square overflow-hidden rounded-lg">
+                <img src="./Assignment_03_Category_0001/c1-assets/cat-cartoon.png" alt="Cat" class="h-full w-full object-cover transition-transform group-hover:scale-105" />
+              </div>
+              <h3 class="mb-1 text-lg font-semibold">Cat</h3>
+              <p class="text-sm text-gray-600">3 items</p>
+            </div>
+
+            <!-- Birds Category -->
+            <div class="group cursor-pointer rounded-lg bg-white p-4 shadow-md transition-all hover:shadow-lg">
+              <div class="relative mb-4 aspect-square overflow-hidden rounded-lg">
+                <img src="./Assignment_03_Category_0001/c1-assets/bird-cartoon.png" alt="Birds" class="h-full w-full object-cover transition-transform group-hover:scale-105" />
+              </div>
+              <h3 class="mb-1 text-lg font-semibold">Birds</h3>
+              <p class="text-sm text-gray-600">3 items</p>
+            </div>
+
+            <!-- Small pet Category -->
+            <div class="group cursor-pointer rounded-lg bg-white p-4 shadow-md transition-all hover:shadow-lg">
+              <div class="relative mb-4 aspect-square overflow-hidden rounded-lg">
+                <img src="./Assignment_03_Category_0001/c1-assets/cute-pet-small.png" alt="Small pet" class="h-full w-full object-cover transition-transform group-hover:scale-105" />
+              </div>
+              <h3 class="mb-1 text-lg font-semibold">Small pet</h3>
+              <p class="text-sm text-gray-600">3 items</p>
+            </div>
+
+            <!-- Rabbit Category -->
+            <div class="group cursor-pointer rounded-lg bg-white p-4 shadow-md transition-all hover:shadow-lg">
+              <div class="relative mb-4 aspect-square overflow-hidden rounded-lg">
+                <img src="./Assignment_03_Category_0001/c1-assets/mouse-cartoon.png" alt="Rabbit" class="h-full w-full object-cover transition-transform group-hover:scale-105" />
+              </div>
+              <h3 class="mb-1 text-lg font-semibold">Rabbit</h3>
+              <p class="text-sm text-gray-600">2 items</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Low Price Section -->
+      <section class="py-16">
+        <div class="container mx-auto">
+          <h2 class="mb-8 text-center text-3xl font-bold">Everyday Low Price</h2>
+          <div class="grid gap-8 md:grid-cols-2">
+            <div class="flex items-center gap-8 rounded-lg bg-white p-8 shadow-lg">
+              <div>
+                <span class="mb-2 inline-block text-sm text-gray-600">Under Price</span>
+                <h3 class="mb-1 text-xl font-bold">Pet Grooming Mitt</h3>
+                <p class="mb-4 text-gray-600">(Easy Hair Removal)</p>
+                <p class="text-2xl font-bold text-primary">$7.99</p>
+              </div>
+              <img src="./Assignment_03_Category_0001/c1-assets/cute-dog-mid.png" alt="Pet Grooming Mitt" class="w-1/2 rounded-lg" />
+            </div>
+            
+            <div class="flex items-center gap-8 rounded-lg bg-white p-8 shadow-lg">
+              <div>
+                <h3 class="mb-4 text-xl font-bold">T-Shirt for Dogs</h3>
+                <p class="text-2xl font-bold text-primary">$7.99</p>
+              </div>
+              <img src="./Assignment_03_Category_0001/c1-assets/cute-pet-mid.png" alt="T-Shirt for Dogs" class="w-1/2 rounded-lg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="bg-gray-50 py-16">
+        <div class="container mx-auto">
+          <div class="grid gap-8 md:grid-cols-2">
+            <div>
+              <img src="./Assignment_03_Category_0001/c1-assets/cute-pet-mid.png" alt="Happy pets" class="rounded-lg" />
+            </div>
+            <div class="flex flex-col justify-center">
+              <h2 class="mb-4 text-3xl font-bold">Get Pawsome News!</h2>
+              <p class="mb-6 text-gray-600">Exclusive training tips, tricks, product deals and more.</p>
+              <form class="flex gap-4">
+                <input type="email" placeholder="Enter email...." class="flex-1 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
+                <button type="submit" class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground ring-offset-background transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+      <div class="container mx-auto py-12">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div>
+            <div class="flex items-center gap-2">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/274e7fb5651d95c301fa503fdacdf50cfb625d9bf85f26c1124d49d61bff373a" alt="Logo" class="h-8 w-8" />
+              <span class="text-xl font-bold">Browse<span class="text-yellow-400">4</span>Pets</span>
+            </div>
+            <p class="mt-4 text-gray-400">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+          </div>
+          
+          <div>
+            <h3 class="mb-4 text-lg font-semibold">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="/find-pet" class="text-gray-400 hover:text-white">Find a pet</a></li>
+              <li><a href="/breeds" class="text-gray-400 hover:text-white">Breeds</a></li>
+              <li><a href="/contact" class="text-gray-400 hover:text-white">Contact us</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="mb-4 text-lg font-semibold">Follow Us</h3>
+            <div class="flex gap-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
